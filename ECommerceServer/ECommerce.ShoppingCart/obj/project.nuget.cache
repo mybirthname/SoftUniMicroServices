@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ii9f+h4XgipK3+3VjpgvlTy1KFQP8f4dpVDE/QoQFUB/V3Jqa3D7yug9phERuEwvDUPLnkUUq+8pzus5Bj+plQ==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
