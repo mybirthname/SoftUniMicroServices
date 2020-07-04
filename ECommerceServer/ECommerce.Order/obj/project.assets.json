@@ -5755,9 +5755,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Order.csproj",
-      "projectName": "ECommerce.Order",
-      "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Order.csproj",
+      "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj",
+      "projectName": "ECommerce.Ordering",
+      "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj",
       "packagesPath": "C:\\Users\\MS2015\\.nuget\\packages\\",
       "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\obj\\",
       "projectStyle": "PackageReference",

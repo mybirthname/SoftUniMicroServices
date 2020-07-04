@@ -7,13 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Common", "ECommer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Identity", "ECommerce.Identity\ECommerce.Identity.csproj", "{A5AB0AE5-D456-4B41-9B7F-51AD6ABD0CA8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.ShoppingCart", "ECommerce.ShoppingCart\ECommerce.ShoppingCart.csproj", "{84B1BAE8-D8A3-4822-AFF8-16BA1E1AD014}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ecommerce.Product", "Ecommerce.Product\Ecommerce.Product.csproj", "{5605A6C3-0B53-485A-A060-212F7F6F914D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Product", "Ecommerce.Product\ECommerce.Product.csproj", "{5605A6C3-0B53-485A-A060-212F7F6F914D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Supplier", "ECommerce.Supplier\ECommerce.Supplier.csproj", "{BC89B562-128E-4483-8EAD-BE91C9A24BCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Order", "ECommerce.Order\ECommerce.Order.csproj", "{DE4DEFE0-45A5-4D84-8931-459ABBECF647}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Ordering", "ECommerce.Order\ECommerce.Ordering.csproj", "{DE4DEFE0-45A5-4D84-8931-459ABBECF647}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,10 +27,6 @@ Global
 		{A5AB0AE5-D456-4B41-9B7F-51AD6ABD0CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AB0AE5-D456-4B41-9B7F-51AD6ABD0CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AB0AE5-D456-4B41-9B7F-51AD6ABD0CA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{84B1BAE8-D8A3-4822-AFF8-16BA1E1AD014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84B1BAE8-D8A3-4822-AFF8-16BA1E1AD014}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84B1BAE8-D8A3-4822-AFF8-16BA1E1AD014}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84B1BAE8-D8A3-4822-AFF8-16BA1E1AD014}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5605A6C3-0B53-485A-A060-212F7F6F914D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5605A6C3-0B53-485A-A060-212F7F6F914D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5605A6C3-0B53-485A-A060-212F7F6F914D}.Release|Any CPU.ActiveCfg = Release|Any CPU

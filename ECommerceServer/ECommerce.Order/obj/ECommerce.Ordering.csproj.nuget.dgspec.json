@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\ECommerce.Product.csproj": {}
+    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\ECommerce.Product.csproj": {
+    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\ECommerce.Product.csproj",
-        "projectName": "ECommerce.Product",
-        "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\ECommerce.Product.csproj",
+        "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj",
+        "projectName": "ECommerce.Ordering",
+        "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\ECommerce.Ordering.csproj",
         "packagesPath": "C:\\Users\\MS2015\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\obj\\",
+        "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Order\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

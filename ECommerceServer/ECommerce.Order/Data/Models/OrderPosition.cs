@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Product.Data.Models
+namespace ECommerce.Order.Data.Models
 {
-    public class ProductItem
+    public class OrderPosition
     {
         public Guid ID { get; set; }
 
         public string Title { get; set; }
 
-        public string NrIntern { get; set; }
+        public string PositionNr { get; set; }
+
+        public string ProductNr { get; set; }
+
+        public Guid ArticleID { get; set; }
 
         public decimal PricePerPQ { get; set; }
 
@@ -19,8 +23,6 @@ namespace Ecommerce.Product.Data.Models
 
         public string Description { get; set; }
 
-        public Guid SupplierID { get; set; }
-
-        public int DeliveryTime { get; set; }
+        public Guid OrderID { get; set; }
     }
 }

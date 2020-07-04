@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Ecommerce.Product.Data.Models
+namespace ECommerce.Order.Data.Models
 {
-    public class ProductItem
+    public class OrderItem
     {
         public Guid ID { get; set; }
 
@@ -13,14 +13,12 @@ namespace Ecommerce.Product.Data.Models
 
         public string NrIntern { get; set; }
 
-        public decimal PricePerPQ { get; set; }
-
-        public string URL { get; set; }
-
-        public string Description { get; set; }
+        public DateTime DeliveryDate { get; set; }
 
         public Guid SupplierID { get; set; }
 
-        public int DeliveryTime { get; set; }
+        public decimal AmountNet { get; set; }
+
+        public Guid UserID { get; set; }
     }
 }
