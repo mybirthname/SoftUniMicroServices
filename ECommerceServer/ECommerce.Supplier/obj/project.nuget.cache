@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tu3jKlvHMClD//a8DkBrHQ+0dNfJJLULg8Bz3i1E5et+VhDSCUuOQDd69MTziLS9elposthyLTsSZpYPJjyjWA==",
+  "dgSpecHash": "KCvgg6zobiy1gYV0CjYB8kvMW2q56jNJe3eU1+OYLltBdnhw9d3v/+E7W0+xZDpB8Yx5F6e2eEG47dpEWPY99w==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
+  "projectFilePath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Supplier\\ECommerce.Supplier.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MS2015\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",

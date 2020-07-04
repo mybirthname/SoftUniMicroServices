@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj": {}
+    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\Ecommerce.Product.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj": {
+    "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\Ecommerce.Product.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
-        "projectName": "ECommerce.ShoppingCart",
-        "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
+        "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\Ecommerce.Product.csproj",
+        "projectName": "Ecommerce.Product",
+        "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\Ecommerce.Product.csproj",
         "packagesPath": "C:\\Users\\MS2015\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\obj\\",
+        "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

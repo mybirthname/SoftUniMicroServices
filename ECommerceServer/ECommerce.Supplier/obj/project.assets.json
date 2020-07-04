@@ -5755,11 +5755,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
-      "projectName": "ECommerce.ShoppingCart",
-      "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\ECommerce.ShoppingCart.csproj",
+      "projectUniqueName": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Supplier\\ECommerce.Supplier.csproj",
+      "projectName": "ECommerce.Supplier",
+      "projectPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Supplier\\ECommerce.Supplier.csproj",
       "packagesPath": "C:\\Users\\MS2015\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ShoppingCart\\obj\\",
+      "outputPath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.Supplier\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
