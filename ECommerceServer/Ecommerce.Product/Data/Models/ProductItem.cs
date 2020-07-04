@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Product.Data.Models
 {
-    public class Product
+    public class ProductItem
     {
         public Guid ID { get; set; }
 
