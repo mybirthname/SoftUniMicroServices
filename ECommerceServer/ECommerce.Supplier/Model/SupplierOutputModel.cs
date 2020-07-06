@@ -1,13 +1,12 @@
 ﻿using ECommerce.Common.Models.Interfaces;
-using ECommerce.Supplier.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ECommerce.Supplier.Data
+namespace ECommerce.Supplier.Model
 {
-    public class Supplier : IMapFrom<SupplierInputModel>
+    public class SupplierOutputModel : IMapFrom<Data.Supplier>
     {
         public Guid ID { get; set; }
         public string Name { get; set; }
@@ -18,7 +17,7 @@ namespace ECommerce.Supplier.Data
 
         public string Bank { get; set; }
         public string IBAN { get; set; }
-
         public string NrIntern { get; set; }
+
     }
 }
