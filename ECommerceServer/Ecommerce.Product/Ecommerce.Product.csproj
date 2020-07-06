@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ECommerce.Common\ECommerce.Common.csproj" />
   </ItemGroup>
 
 </Project>

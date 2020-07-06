@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Product.Data.Models;
+using ECommerce.Product.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Ecommerce.Product.Data
         }
 
         public DbSet<ProductItem> Products { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

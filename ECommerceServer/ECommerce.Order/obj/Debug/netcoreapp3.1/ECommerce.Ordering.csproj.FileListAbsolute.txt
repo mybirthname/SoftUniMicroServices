@@ -62,3 +62,16 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.genruntimeconfig.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\Automatonymous.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\GreenPipes.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\MassTransit.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\MassTransit.AspNetCoreIntegration.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\MassTransit.RabbitMqTransport.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\NewId.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\ECommerce.Common.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\ECommerce.Common.pdb
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.MvcApplicationPartsAssemblyInfo.cs

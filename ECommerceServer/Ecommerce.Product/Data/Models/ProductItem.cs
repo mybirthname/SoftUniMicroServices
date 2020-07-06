@@ -1,11 +1,13 @@
-﻿using System;
+﻿using ECommerce.Common.Models.Interfaces;
+using ECommerce.Product.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace Ecommerce.Product.Data.Models
 {
-    public class ProductItem
+    public class ProductItem : IMapFrom<ProductItemInputModel>
     {
         public Guid ID { get; set; }
 
