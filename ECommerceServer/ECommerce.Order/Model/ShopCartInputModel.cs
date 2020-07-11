@@ -1,12 +1,11 @@
-﻿using ECommerce.Order.Data.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ECommerce.Ordering.Data.Models
+namespace ECommerce.Ordering.Model
 {
-    public class ShoppingCart
+    public class ShopCartInputModel
     {
         public Guid ID { get; set; }
 
@@ -14,6 +13,6 @@ namespace ECommerce.Ordering.Data.Models
 
         public decimal AmountNet { get; set; }
 
-        public User User { get; set; }
+
     }
 }

@@ -24,5 +24,7 @@ namespace ECommerce.Order.Data.Models
         public string Description { get; set; }
 
         public Guid OrderID { get; set; }
+
+        public OrderItem Order { get; set; }
     }
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace ECommerce.Order.Data.Models
+namespace ECommerce.Ordering.Model
 {
-    public class OrderItem
+    public class OrderItemOutputModel
     {
         public Guid ID { get; set; }
 
@@ -19,10 +19,8 @@ namespace ECommerce.Order.Data.Models
 
         public decimal AmountNet { get; set; }
 
-        public Guid UserID { get; set; }
+        public string UserName { get; set; }
 
-        public User User { get; set; }
-        public Supplier Supplier { get; set; }
-
+        public string SupplierName { get; set; }
     }
 }

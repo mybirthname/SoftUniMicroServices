@@ -1,4 +1,5 @@
 ﻿using ECommerce.Common.Models.Interfaces;
+using ECommerce.Product.Data.Models;
 using ECommerce.Product.Models;
 using System;
 using System.Collections.Generic;
@@ -24,5 +25,7 @@ namespace Ecommerce.Product.Data.Models
         public Guid SupplierID { get; set; }
 
         public int DeliveryTime { get; set; }
+
+        public Supplier Supplier { get; set; }
     }
 }
