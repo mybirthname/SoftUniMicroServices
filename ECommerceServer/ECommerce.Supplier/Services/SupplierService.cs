@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using ECommerce.Common.Infrastructure;
 using ECommerce.Common.Services;
 using ECommerce.Supplier.Data;
 using ECommerce.Supplier.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -25,7 +27,6 @@ namespace ECommerce.Supplier.Services
                     .All()
                     .Where(d => d.ID == id))
                 .FirstOrDefaultAsync();
-
 
         public async Task<IEnumerable<SupplierOutputModel>> GetList()
             => await this.mapper.ProjectTo<SupplierOutputModel>(this.All()).ToListAsync();

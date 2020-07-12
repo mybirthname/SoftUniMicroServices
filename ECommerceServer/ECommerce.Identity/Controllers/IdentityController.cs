@@ -36,6 +36,13 @@ namespace ECommerce.Identity.Controllers
             return await Login(input);
         }
 
+        [HttpGet]
+        [Route(nameof(Test))]
+        public IActionResult Test()
+        {
+            return new OkResult();
+        }
+
         [HttpPost]
         [Route(nameof(Login))]
         public async Task<ActionResult<UserOutputModel>> Login(UserInputModel input)

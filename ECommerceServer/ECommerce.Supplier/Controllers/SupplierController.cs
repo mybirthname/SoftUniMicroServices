@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ECommerce.Common.Controllers;
+using ECommerce.Common.Infrastructure;
 using ECommerce.Supplier.Model;
 using ECommerce.Supplier.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -21,13 +22,13 @@ namespace ECommerce.Supplier.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [AuthorizeAdministrator]
         [Route(nameof(GetList))]
         public async Task<IEnumerable<SupplierOutputModel>> GetList()
             => await service.GetList();
 
         [HttpGet]
-        [Authorize]
+        [AuthorizeAdministrator]
         [Route(nameof(GetByID))]
 
         public async Task<SupplierOutputModel> GetByID(Guid id)
