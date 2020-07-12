@@ -53,8 +53,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.csprojAssemblyReference.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.AssemblyInfoInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.AssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.csproj.CoreCompileInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.RazorTargetAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.csproj.CopyComplete
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Ordering.StaticWebAssets.Manifest.cache
@@ -74,4 +72,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\ECommerce.Common.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\bin\Debug\netcoreapp3.1\ECommerce.Common.pdb
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.csproj.CoreCompileInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Order\obj\Debug\netcoreapp3.1\ECommerce.Ordering.MvcApplicationPartsAssemblyInfo.cache

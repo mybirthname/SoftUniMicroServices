@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/v1/Identity/{everything}",
+      "DownstreamPathTemplate": "/api/v1/Identity/login",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,7 +9,7 @@
           "Port": 6001
         }
       ],
-      "UpstreamPathTemplate": "/Identity/{everything}",
+      "UpstreamPathTemplate": "/Identity/login",
       "UpstreamHttpMethod": [ "Post" ],
       "DangerousAcceptAnyServerCertificateValidator": true
     },

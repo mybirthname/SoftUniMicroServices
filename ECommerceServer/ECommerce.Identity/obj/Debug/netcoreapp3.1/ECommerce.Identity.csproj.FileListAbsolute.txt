@@ -48,9 +48,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.AssemblyInfoInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.AssemblyInfo.cs
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.RazorTargetAssemblyInfo.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.csproj.CoreCompileInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -80,3 +77,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.genruntimeconfig.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.csproj.CoreCompileInputs.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.MvcApplicationPartsAssemblyInfo.cache

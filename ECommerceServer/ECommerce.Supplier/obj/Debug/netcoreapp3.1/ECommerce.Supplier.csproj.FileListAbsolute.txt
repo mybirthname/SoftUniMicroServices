@@ -53,8 +53,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csprojAssemblyReference.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.AssemblyInfoInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.AssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csproj.CoreCompileInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.RazorTargetAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csproj.CopyComplete
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Supplier.StaticWebAssets.Manifest.cache
@@ -74,4 +72,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\RabbitMQ.Client.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\ECommerce.Common.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\ECommerce.Common.pdb
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csproj.CoreCompileInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cache

@@ -1,7 +1,6 @@
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\bin\Debug\netcoreapp3.1\ECommerce.Common.deps.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\bin\Debug\netcoreapp3.1\ECommerce.Common.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\bin\Debug\netcoreapp3.1\ECommerce.Common.pdb
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\obj\Debug\netcoreapp3.1\ECommerce.Common.csprojAssemblyReference.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\obj\Debug\netcoreapp3.1\ECommerce.Common.AssemblyInfoInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\obj\Debug\netcoreapp3.1\ECommerce.Common.AssemblyInfo.cs
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Common\obj\Debug\netcoreapp3.1\ECommerce.Common.dll

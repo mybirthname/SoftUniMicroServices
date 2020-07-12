@@ -40,7 +40,6 @@ namespace ECommerce.Supplier.Controllers
         public async Task<SupplierOutputModel> Save(SupplierInputModel model)
             => await service.Save(model);
 
-
     }
 
 

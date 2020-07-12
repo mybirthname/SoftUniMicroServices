@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wWRP5Sqj2N8+SAXbgzf1yk4BBivo1KOO2mx0QSv5b1TENaVR2LA4cKAGTXvoUWEkrmzEruNhLdgU+0ozU+KEjQ==",
+  "dgSpecHash": "RIRA5ZbnkiU7kgjE5YQ9VbuVC1CJh+JmtYdmL+sybpdjvXAQl/cPnBiKBeqPpLb+sTMw/9+m/K9g7rhfTGgXfw==",
   "success": true,
   "projectFilePath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\Ecommerce.Product\\ECommerce.Product.csproj",
   "expectedPackageFiles": [
@@ -65,6 +65,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",

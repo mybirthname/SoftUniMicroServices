@@ -1,0 +1,117 @@
+version: '3.4'
+
+services:
+    ecommerce.apigetway:
+        container_name: apigetway
+        image: ${DOCKER_REGISTRY-}ecommerceapigetway
+        build:
+          context: .
+          dockerfile: ECommerce.ApiGetway/Dockerfile
+        ports:
+            - "7000:80"
+            - "7001:443"
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        volumes:
+            - ./.aspnet/apigetway/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        restart: on-failure
+        networks: 
+            - ecommerce-network
+
+    messages:
+        container_name: rabbitmq
+        image: rabbitmq:latest
+        ports:
+            - "15672:15672"
+            - "5672:5672"
+        hostname: "rabbitmq"
+        environment:
+            - RABBITMQ_ERLANG_COOKIE=Rand0mR4bbitMqCo0k1e
+            - RABBITMQ_DEFAULT_USER=rabbitmq
+            - RABBITMQ_DEFAULT_PASS=rabbitmq
+        networks: 
+            - ecommerce-network
+
+    ecommerce.product:
+        container_name: product
+        image: ${DOCKER_REGISTRY-}ecommerceproduct
+        build:
+            context: .
+            dockerfile: ECommerce.Product/Dockerfile
+        ports:
+            - "9000:80"
+            - "9001:443"
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceProduct;User Id=sa;Password=123456;MultipleActiveResultSets=true
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        restart: on-failure
+        volumes:
+            - ./.aspnet/product/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        networks: 
+            - ecommerce-network
+
+    ecommerce.supplier:
+        container_name: supplier
+        image: ${DOCKER_REGISTRY-}ecommercesupplier
+        build:
+            context: .
+            dockerfile: ECommerce.Supplier/Dockerfile
+        ports:
+            - "5000:80"
+            - "5001:443"
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceSupplier;User Id=sa;Password=123456;MultipleActiveResultSets=true
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        restart: on-failure
+        volumes:
+            - ./.aspnet/supplier/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        networks: 
+            - ecommerce-network
+
+    ecommerce.identity:
+        container_name: identity
+        image: ${DOCKER_REGISTRY-}ecommerceidentity
+        build:
+            context: .
+            dockerfile: ECommerce.Identity/Dockerfile
+        ports:
+            - "6000:80"
+            - "6001:443"
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceIdentity;User Id=sa;Password=123456;MultipleActiveResultSets=true
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        restart: on-failure
+        volumes:
+            - ./.aspnet/identity/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        networks: 
+            - ecommerce-network
+
+    ecommerce.ordering:
+        container_name: ordering
+        image: ${DOCKER_REGISTRY-}ecommerceordering
+        build:
+            context: .
+            dockerfile: ECommerce.Order/Dockerfile
+        ports:
+            - "8000:80"
+            - "8001:443"
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceOrdering;User Id=sa;Password=123456;MultipleActiveResultSets=true
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        restart: on-failure
+        volumes:
+            - ./.aspnet/ordering/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        networks: 
+            - ecommerce-network
+networks:
+    ecommerce-network:

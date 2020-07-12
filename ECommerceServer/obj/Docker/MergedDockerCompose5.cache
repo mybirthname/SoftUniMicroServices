@@ -1,0 +1,102 @@
+networks:
+  ecommerce-network: {}
+services:
+  ecommerce.apigetway:
+    build:
+      context: C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer
+      dockerfile: ECommerce.ApiGetway/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.ApiGetway
+      target: base
+    container_name: ECommerce.ApiGetway
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ApplicationSettings__Secret: S0M3 M4G1C UN1C0RNS G3N3R4T3D TH1S S3CR3T
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: ecommerceapigetway:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/netcoreapp3.1/ECommerce.ApiGetway.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      carrentalsystem-network: {}
+    ports:
+    - target: 80
+    - published: 7015
+      target: 443
+    - target: 443
+    restart: on-failure
+    tty: true
+    volumes:
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.ApiGetway:/app:rw
+    - C:\Users\MS2015\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\identity\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
+    - C:\Users\MS2015\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\MS2015\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\MS2015\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer:/src:rw
+  ecommerce.product:
+    build:
+      context: C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer
+      dockerfile: ECommerce.Product/Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: ECommerce.Product
+      target: base
+    container_name: ECommerce.Product
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ApplicationSettings__Secret: S0M3 M4G1C UN1C0RNS G3N3R4T3D TH1S S3CR3T
+      ConnectionStrings__DefaultConnection: Server=localhost/MSSQLSERVER01;Database=ECommerceProduct;Trusted_Connection=True;MultipleActiveResultSets=true
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: ecommerceproduct:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/netcoreapp3.1/ECommerce.Product.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    networks:
+      carrentalsystem-network: {}
+    ports:
+    - published: 9001
+      target: 443
+    restart: on-failure
+    tty: true
+    volumes:
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Product:/app:rw
+    - C:\Users\MS2015\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\product\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
+    - C:\Users\MS2015\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\MS2015\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - C:\Users\MS2015\.nuget\packages:/root/.nuget/packages:ro
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer:/src:rw
+  messages:
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_DEFAULT_PASS: rabbitmq
+      RABBITMQ_DEFAULT_USER: rabbitmq
+      RABBITMQ_ERLANG_COOKIE: Rand0mR4bbitMqCo0k1e
+    hostname: rabbitmq
+    image: rabbitmq:latest
+    networks:
+      carrentalsystem-network: {}
+    ports:
+    - published: 5672
+      target: 5672
+    - published: 15672
+      target: 15672
+version: '3.4'
