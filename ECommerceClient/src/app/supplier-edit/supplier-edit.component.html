@@ -1,0 +1,32 @@
+<div class="container mt-5">
+        <h1 class="text-center mb-3">Supplier</h1>
+        <form [formGroup]="form">
+            <div class="row justify-content-center">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="nrIntern" placeholder="Number" aria-label="Number" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="name" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>                   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="address" placeholder="Address" aria-label="Address" aria-describedby="basic-addon1">
+                    </div>   
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="bank" placeholder="Bank" aria-label="Bank" aria-describedby="basic-addon1">
+                    </div> 
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" formControlName="iban" placeholder="IBAN" aria-label="IBAN" aria-describedby="basic-addon1">
+                    </div>       
+                </div>
+            </div>
+            <div class="row justify-content-center">    
+                <div class="col-sm-6">
+                    <button type="button"  class="btn btn-success" (click)="save()">Save</button>    
+                </div>
+            </div>  
+        </form>
+    </div>

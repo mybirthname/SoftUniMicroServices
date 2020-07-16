@@ -5,8 +5,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 6001
+          "Host": "identity",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/Identity/login",
@@ -18,8 +18,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 5001
+          "Host": "supplier",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/supplier/{everything}",
@@ -35,8 +35,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 9001
+          "Host": "product",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/product/{everything}",
@@ -55,8 +55,8 @@
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 8001
+          "Host": "ordering",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/order/{everything}",
@@ -69,6 +69,6 @@
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "https://localhost:7015"
+    "BaseUrl": "https://apigetway"
   }
 }

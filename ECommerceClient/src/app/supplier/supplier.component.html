@@ -1,1 +1,31 @@
-<p>supplier works!</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-3">Supplier</h1>
+        
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">NrIntern</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Email</th>
+            <th scope="col">Edit</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let s of supplier">
+            <td scope="row">{{s.nrIntern}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.address}}</td>
+            <td>{{s.email}}</td>
+            <td><button type="button"  class="btn btn-success" (click)="editSupplier(s.id)">Edit supplier</button>    </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="row justify-content">    
+        <div class="col-sm-6">
+            <button type="button"  class="btn btn-success" (click)="newSupplier()">New supplier</button>    
+        </div>
+    </div>  
+  </div>

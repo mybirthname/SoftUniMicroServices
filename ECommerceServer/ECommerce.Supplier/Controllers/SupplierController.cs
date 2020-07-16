@@ -36,9 +36,15 @@ namespace ECommerce.Supplier.Controllers
 
         [HttpPost]
         [Authorize]
-        [Route(nameof(Save))]
-        public async Task<SupplierOutputModel> Save(SupplierInputModel model)
-            => await service.Save(model);
+        [Route("save/{id}")]
+        [Route("save")]
+        public async Task<SupplierOutputModel> Save(Guid? id, SupplierInputModel model)
+        {
+            if(id.HasValue)
+                model.ID = id.Value;
+
+            return await service.Save(model);
+        }
 
     }
 

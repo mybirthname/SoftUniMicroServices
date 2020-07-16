@@ -5,6 +5,7 @@ import { OrderComponent } from './order/order.component';
 import { ShopcartComponent } from './shopcart/shopcart.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { ProductComponent } from './product/product.component';
+import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
   { path: 'shopcart', component: ShopcartComponent },
   { path: 'supplier', component: SupplierComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'supplier-edit/:id', component:SupplierEditComponent},
+  { path: 'supplier-edit', component:SupplierEditComponent}
+
 ];
 
 @NgModule({

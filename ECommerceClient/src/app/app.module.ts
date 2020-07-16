@@ -11,6 +11,7 @@ import { ProductComponent } from './product/product.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { ShopcartComponent } from './shopcart/shopcart.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     OrderComponent,
     ProductComponent,
     SupplierComponent,
-    ShopcartComponent
+    ShopcartComponent,
+    SupplierEditComponent
     
   ],
   imports: [

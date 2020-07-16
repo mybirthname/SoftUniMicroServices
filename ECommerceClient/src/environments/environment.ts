@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  userSerivce: "https://localhost:6001/api/v1/Identity"
+  apiGetway: "https://localhost:7001"
 };
 
 /*

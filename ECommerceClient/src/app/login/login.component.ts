@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit {
 
   login()
   {
-    this.http.post<any>(environment.userSerivce + "/login", this.form.value).subscribe(x=>{
+    this.http.post<any>(environment.apiGetway + "/identity/login", this.form.value).subscribe(x=>{
       localStorage.setItem("token", x.token);
       this.router.navigate(['/shopcart']);
     })

@@ -10,6 +10,7 @@ services:
         ports:
             - "7000:80"
             - "7001:443"
+        hostname: "apigetway"
         env_file: ECommerce.Common/Common.env
         environment:
             - ASPNETCORE_ENVIRONMENT=Development
@@ -43,6 +44,7 @@ services:
         ports:
             - "9000:80"
             - "9001:443"
+        hostname: "product"
         env_file: ECommerce.Common/Common.env
         environment:
             - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceProduct;User Id=sa;Password=123456;MultipleActiveResultSets=true
@@ -64,6 +66,7 @@ services:
             - "5000:80"
             - "5001:443"
         env_file: ECommerce.Common/Common.env
+        hostname: "supplier"
         environment:
             - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceSupplier;User Id=sa;Password=123456;MultipleActiveResultSets=true
             - ASPNETCORE_ENVIRONMENT=Development
@@ -83,6 +86,7 @@ services:
         ports:
             - "6000:80"
             - "6001:443"
+        hostname: identity
         env_file: ECommerce.Common/Common.env
         environment:
             - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceIdentity;User Id=sa;Password=123456;MultipleActiveResultSets=true
@@ -103,6 +107,7 @@ services:
         ports:
             - "8000:80"
             - "8001:443"
+        hostname: ordering
         env_file: ECommerce.Common/Common.env
         environment:
             - ConnectionStrings__DefaultConnection=Server=host.docker.internal\MSSQLSERVER01;Database=ECommerceOrdering;User Id=sa;Password=123456;MultipleActiveResultSets=true
