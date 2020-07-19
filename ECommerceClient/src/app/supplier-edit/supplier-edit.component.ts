@@ -16,7 +16,6 @@ export class SupplierEditComponent implements OnInit {
   supplierId;
   form:FormGroup;
   constructor(private http:HttpClient, private fb:FormBuilder, private router: Router, private activatedRoute:ActivatedRoute) { 
-    console.log('Bearer ' + localStorage.getItem('token'));
     this.supplierId = this.activatedRoute.snapshot.params["id"];
 
       this.form = this.fb.group({
@@ -38,7 +37,6 @@ export class SupplierEditComponent implements OnInit {
           params: {'id': this.supplierId}
         })
       .subscribe(x=>{
-        console.log(x);
         this.form.get('nrIntern').setValue(x.nrIntern);
         this.form.get('name').setValue(x.name);
         this.form.get('email').setValue(x.email);

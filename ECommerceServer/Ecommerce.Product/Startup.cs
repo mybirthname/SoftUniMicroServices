@@ -5,7 +5,9 @@ using System.Threading.Tasks;
 using Ecommerce.Product.Data;
 using Ecommerce.Product.Data.Models;
 using ECommerce.Common.Infrastructure;
+using ECommerce.Product.Messages;
 using ECommerce.Product.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,7 +32,9 @@ namespace Ecommerce.Product
         public void ConfigureServices(IServiceCollection services)
         => services
             .AddWebService<ProductDbContext>(this.Configuration)
-            .AddTransient<IProductItemService, ProductItemService>();
+            .AddTransient<IProductItemService, ProductItemService>()
+            .AddTransient<ISupplierService, SupplierService>()
+            .AddMessaging(this.Configuration, typeof(SupplierCreatedConsumer));
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -1,9 +1,6 @@
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csprojAssemblyReference.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.AssemblyInfoInputs.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.AssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csproj.CoreCompileInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -40,7 +37,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -75,3 +71,11 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.genruntimeconfig.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.csproj.CoreCompileInputs.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Supplier\obj\Debug\netcoreapp3.1\ECommerce.Supplier.MvcApplicationPartsAssemblyInfo.cache

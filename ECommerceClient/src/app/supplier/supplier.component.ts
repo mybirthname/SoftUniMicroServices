@@ -19,7 +19,6 @@ export class SupplierComponent implements OnInit {
 
     this.http.get<Array<any>>(environment.apiGetway + "/supplier/getlist", {headers: {'Authorization': 'Bearer ' + localStorage.getItem('token')}}).subscribe(x=> {
       this.supplier = x
-      console.log(x);
     })
   }
 

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using ECommerce.Common.Infrastructure;
 using ECommerce.Supplier.Data;
 using ECommerce.Supplier.Services;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -29,7 +30,8 @@ namespace ECommerce.Supplier
         public void ConfigureServices(IServiceCollection services)
         => services
             .AddWebService<SupplierDbContext>(this.Configuration)
-            .AddTransient<ISupplierService, SupplierService>();
+            .AddTransient<ISupplierService, SupplierService>()
+            .AddMessaging(Configuration);
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         => app.UseWebService(env)

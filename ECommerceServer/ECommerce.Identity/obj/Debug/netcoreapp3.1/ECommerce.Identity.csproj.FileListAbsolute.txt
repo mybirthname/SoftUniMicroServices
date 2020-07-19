@@ -39,7 +39,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.PlatformAbstractions.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
@@ -80,3 +79,8 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\obj\Debug\netcoreapp3.1\ECommerce.Identity.genruntimeconfig.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll

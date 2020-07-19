@@ -23,7 +23,7 @@ services:
 
     messages:
         container_name: rabbitmq
-        image: rabbitmq:latest
+        image: rabbitmq:3.8.5-management
         ports:
             - "15672:15672"
             - "5672:5672"
@@ -95,6 +95,26 @@ services:
         restart: on-failure
         volumes:
             - ./.aspnet/identity/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
+        networks: 
+            - ecommerce-network
+
+    ecommerce.notificaitons:
+        container_name: notificaitons
+        image: ${DOCKER_REGISTRY-}ecommercenotifications
+        build:
+            context: .
+            dockerfile: ECommerce.Notifications/Dockerfile
+        ports:
+            - "3000:80"
+            - "3001:443"
+        hostname: notifications
+        env_file: ECommerce.Common/Common.env
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - ASPNETCORE_URLS=https://+:443;http://+:80
+        restart: on-failure
+        volumes:
+            - ./.aspnet/notificaitons/DataProtection-Keys:/root/.aspnet/DataProtection-Keys
         networks: 
             - ecommerce-network
 

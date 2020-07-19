@@ -12,6 +12,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.0.2-develop.2877" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.2-develop.2877" />
   </ItemGroup>
 
   <ItemGroup>

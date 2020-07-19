@@ -12,7 +12,8 @@ import { SupplierComponent } from './supplier/supplier.component';
 import { ShopcartComponent } from './shopcart/shopcart.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,11 @@ import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule 
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

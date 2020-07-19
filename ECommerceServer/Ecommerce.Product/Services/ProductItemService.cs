@@ -2,6 +2,7 @@
 using Ecommerce.Product.Data;
 using Ecommerce.Product.Data.Models;
 using ECommerce.Common.Services;
+using ECommerce.Product.Data.Models;
 using ECommerce.Product.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -17,7 +18,9 @@ namespace ECommerce.Product.Services
         private readonly IMapper mapper;
 
         public ProductItemService(ProductDbContext db, IMapper mapper) : base(db)
-            => this.mapper = mapper;
+        {
+            this.mapper = mapper;
+        }
 
         public async Task<IEnumerable<ProductItemOutputModel>> GetList()
             => await this.mapper.ProjectTo<ProductItemOutputModel>(this.All()).ToListAsync();

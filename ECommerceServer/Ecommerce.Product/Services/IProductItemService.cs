@@ -1,4 +1,5 @@
-﻿using ECommerce.Product.Models;
+﻿using ECommerce.Product.Data.Models;
+using ECommerce.Product.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
