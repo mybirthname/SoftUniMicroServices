@@ -31,7 +31,8 @@ namespace ECommerce.Supplier
         => services
             .AddWebService<SupplierDbContext>(this.Configuration)
             .AddTransient<ISupplierService, SupplierService>()
-            .AddMessaging(Configuration);
+            .AddMessaging(Configuration)
+            .AddHangFireServices(Configuration);
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         => app.UseWebService(env)

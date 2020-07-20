@@ -11,7 +11,14 @@
       ],
       "UpstreamPathTemplate": "/Identity/login",
       "UpstreamHttpMethod": [ "Post" ],
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Supplier/{everything}",
@@ -28,7 +35,14 @@
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Product/{everything}",
@@ -48,7 +62,14 @@
       "RouteClaimsRequirement": {
         "Role": "Administrator"
       },
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
     },
     {
       "DownstreamPathTemplate": "/api/v1/Order/{everything}",
@@ -65,7 +86,14 @@
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
       },
-      "DangerousAcceptAnyServerCertificateValidator": true
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
     }
   ],
   "GlobalConfiguration": {

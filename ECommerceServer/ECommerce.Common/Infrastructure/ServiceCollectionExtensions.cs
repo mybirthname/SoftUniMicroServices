@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using ECommerce.Common.Messages;
 using ECommerce.Common.Models;
 using ECommerce.Common.Services;
 using ECommerce.Common.Services.Identity;
 using ECommerce.Common.Services.Identity.Interfaces;
+using GreenPipes;
+using Hangfire;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -32,13 +35,17 @@ namespace ECommerce.Common.Infrastructure
             return services;
         }
 
+        //Sql server action is used for Database Resiliency, used for microservices-> max execute one query 10 times
         public static IServiceCollection AddDatabase<TDbContext>(
             this IServiceCollection services,
             IConfiguration configuration)
             where TDbContext : DbContext
         => services
             .AddScoped<DbContext, TDbContext>()
-            .AddDbContext<TDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            .AddDbContext<TDbContext>(options => options
+                .UseSqlServer(configuration.GetConnectionString("DefaultConnection"), sqlServerOptionsAction: action=> {
+                    action.EnableRetryOnFailure(maxRetryCount: 10, maxRetryDelay: TimeSpan.FromSeconds(30), errorNumbersToAdd: null);
+                }));
 
         public static IServiceCollection AddApplicationSettings(
             this IServiceCollection services,
@@ -90,6 +97,20 @@ namespace ECommerce.Common.Infrastructure
 
         }
 
+        public static IServiceCollection AddHangFireServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddHangfire(config => config
+                                .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+                                .UseSimpleAssemblyNameTypeSerializer()
+                                .UseRecommendedSerializerSettings()
+                                .UseSqlServerStorage(configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddHangfireServer();
+            services.AddHostedService<MessagesHostedService>();
+
+            return services;
+        }
+
         public static IServiceCollection AddMessaging(
             this IServiceCollection services,
             IConfiguration configuration,
@@ -112,14 +133,15 @@ namespace ECommerce.Common.Infrastructure
 
                         consumers.ForEach(consumer => rmq.ReceiveEndpoint(consumer.FullName, endpoint =>
                         {
-                            //endpoint.PrefetchCount = 6;
-                            //endpoint.UseMessageRetry(retry => retry.Interval(10, 1000));
+                            endpoint.PrefetchCount = 2;
+                            endpoint.UseMessageRetry(retry => retry.Interval(10, 1000));
 
                             endpoint.ConfigureConsumer(context, consumer);
                         }));
                     }));
                 })
                 .AddMassTransitHostedService();
+
 
             return services;
         }

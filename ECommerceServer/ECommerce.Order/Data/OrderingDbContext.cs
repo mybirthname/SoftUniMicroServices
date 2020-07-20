@@ -1,4 +1,5 @@
-﻿using ECommerce.Order.Data.Models;
+﻿using ECommerce.Common.Data;
+using ECommerce.Order.Data.Models;
 using ECommerce.Ordering.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Ordering.Data
 {
-    public class OrderingDbContext : DbContext
+    public class OrderingDbContext : MessageDbContext
     {
         public OrderingDbContext(DbContextOptions<OrderingDbContext> options) : base(options)
         {
@@ -23,13 +24,6 @@ namespace ECommerce.Ordering.Data
         public DbSet<ShoppingCart> ShoppingCart { get; set; }
         public DbSet<ShoppingCartPosition> ShoppingCartPosition { get; set; }
 
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-            base.OnModelCreating(builder);
-        }
-
+        protected override Assembly ConfigureAssembly => Assembly.GetExecutingAssembly();
     }
 }

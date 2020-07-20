@@ -34,8 +34,8 @@ namespace ECommerce.Identity
                 .AddUserStorage()
                 .AddTransient<IDataSeeder, IdentityDataSeeder>()
                 .AddTransient<IIdentityService, IdentityService>()
-                .AddTransient<ITokenGeneratorService, TokenGeneratorService>();
-
+                .AddTransient<ITokenGeneratorService, TokenGeneratorService>()
+                .AddHangFireServices(Configuration);
 
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -30,7 +30,9 @@ namespace ECommerce.Order
         => services
             .AddWebService<OrderingDbContext>(this.Configuration)
             .AddTransient<IOrderService, OrderService>()
-            .AddTransient<IShopCartService, ShopCartService>();
+            .AddTransient<IShopCartService, ShopCartService>()
+            .AddHangFireServices(Configuration);
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

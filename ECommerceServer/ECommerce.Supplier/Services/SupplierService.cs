@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using ECommerce.Common.Data.Models;
 using ECommerce.Common.Infrastructure;
 using ECommerce.Common.Messages.Supplier;
 using ECommerce.Common.Services;
@@ -40,15 +41,19 @@ namespace ECommerce.Supplier.Services
         {
             var data = this.mapper.Map<Data.Supplier>(model);
 
-            await Save(data);
-
-            await this.bus.Publish(new SupplierCreatedMessage
+            var messageData = new SupplierCreatedMessage
             {
                 ID = data.ID,
                 Name = data.Name,
                 Email = data.Email
-            });
-            
+            };
+
+            var m = new Message(messageData);
+            await Save(data, m);
+
+            await this.bus.Publish(messageData);
+            await MarkMessageAsPublished(m.ID);
+
             return this.mapper.Map<SupplierOutputModel>(data);
 
         }

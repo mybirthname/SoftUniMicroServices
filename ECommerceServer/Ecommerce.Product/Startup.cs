@@ -34,7 +34,9 @@ namespace Ecommerce.Product
             .AddWebService<ProductDbContext>(this.Configuration)
             .AddTransient<IProductItemService, ProductItemService>()
             .AddTransient<ISupplierService, SupplierService>()
-            .AddMessaging(this.Configuration, typeof(SupplierCreatedConsumer));
+            .AddMessaging(this.Configuration, typeof(SupplierCreatedConsumer))
+            .AddHangFireServices(this.Configuration);
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

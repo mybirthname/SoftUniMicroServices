@@ -76,3 +76,15 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\ECommerce.Notifications.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\Hangfire.Core.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\Hangfire.AspNetCore.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\Hangfire.SqlServer.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\System.Data.SqlClient.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\es\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\fa\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\nl\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\pt\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\pt-BR\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\pt-PT\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\zh\Hangfire.Core.resources.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\bin\Debug\zh-TW\Hangfire.Core.resources.dll

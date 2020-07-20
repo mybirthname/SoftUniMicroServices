@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerce.Common.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ECommerce.Supplier.Data
 {
-    public class SupplierDbContext : DbContext
+    public class SupplierDbContext : MessageDbContext
     {
         public SupplierDbContext(DbContextOptions<SupplierDbContext> options) : base(options)
         {
@@ -16,12 +17,7 @@ namespace ECommerce.Supplier.Data
 
         public DbSet<Supplier> Suppliers { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-            base.OnModelCreating(builder);
-        }
+        protected override Assembly ConfigureAssembly => Assembly.GetExecutingAssembly();
 
     }
 }

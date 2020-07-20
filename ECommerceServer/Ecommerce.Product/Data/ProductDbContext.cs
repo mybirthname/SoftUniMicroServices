@@ -1,4 +1,5 @@
 ﻿using Ecommerce.Product.Data.Models;
+using ECommerce.Common.Data;
 using ECommerce.Product.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Ecommerce.Product.Data
 {
-    public class ProductDbContext :DbContext
+    public class ProductDbContext : MessageDbContext
     {
         public ProductDbContext(DbContextOptions<ProductDbContext> options) :base(options)
         {
@@ -19,12 +20,6 @@ namespace Ecommerce.Product.Data
         public DbSet<ProductItem> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
-
-            base.OnModelCreating(builder);
-        }
-
+        protected override Assembly ConfigureAssembly => Assembly.GetExecutingAssembly();
     }
 }

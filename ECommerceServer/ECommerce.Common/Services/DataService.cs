@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ECommerce.Common.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,11 +17,21 @@ namespace ECommerce.Common.Services
 
         protected IQueryable<TEntity> All() => this.Data.Set<TEntity>();
 
-        public virtual async Task Save(
-            TEntity entity)
+        public async Task MarkMessageAsPublished(Guid id)
         {
-            this.Data.Update(entity);
+            var m = await this.Data.FindAsync<Message>(id);
+            m.Published = true;
 
+            await this.Data.SaveChangesAsync();
+        }
+
+        public async Task Save(TEntity entity, params Message[] messages)
+        {
+            foreach(var message in messages)
+            {
+                this.Data.Add(message);
+            }
+            this.Data.Update(entity);
             await this.Data.SaveChangesAsync();
         }
     }

@@ -46,6 +46,18 @@
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "HangFire.Core": {
+              "target": "Package",
+              "version": "[1.7.11, )"
+            },
+            "HangFire.SqlServer": {
+              "target": "Package",
+              "version": "[1.7.11, )"
+            },
+            "Hangfire.AspNetCore": {
+              "target": "Package",
+              "version": "[1.7.11, )"
+            },
             "MassTransit.AspNetCore": {
               "target": "Package",
               "version": "[7.0.2-develop.2877, )"
@@ -67,6 +79,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Http.Polly": {
+              "target": "Package",
+              "version": "[3.1.6, )"
             }
           },
           "imports": [
