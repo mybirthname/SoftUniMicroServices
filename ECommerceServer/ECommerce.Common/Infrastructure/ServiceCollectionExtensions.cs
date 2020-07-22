@@ -30,6 +30,7 @@ namespace ECommerce.Common.Infrastructure
                 .AddApplicationSettings(configuration)
                 .AddTokenAuthentication(configuration)
                 .AddAutoMapperProfile(Assembly.GetCallingAssembly())
+                .AddHealthChecks(configuration)
                 .AddControllers();
 
             return services;
@@ -95,6 +96,18 @@ namespace ECommerce.Common.Infrastructure
 
             return services;
 
+        }
+
+        public static IServiceCollection AddHealthChecks(
+            this IServiceCollection services,
+            IConfiguration configuration)
+        {
+            var healtchChecks = services.AddHealthChecks();
+            healtchChecks.AddSqlServer(configuration.GetConnectionString("DefaultConnection"));
+
+            healtchChecks.AddRabbitMQ(rabbitConnectionString: "amqp://rabbitmq:rabbitmq@rabbitmq/");
+
+            return services;
         }
 
         public static IServiceCollection AddHangFireServices(this IServiceCollection services, IConfiguration configuration)

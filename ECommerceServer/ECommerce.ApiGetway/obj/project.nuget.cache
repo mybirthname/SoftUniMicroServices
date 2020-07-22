@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "AaRV0zKSVFo/lrbenlqeYA7+RaQguZouu58HbFRgbKCMteVIOLTvoIXfR68UaaPow4jb9rfcqTrtMrpmfNXZbg==",
+  "dgSpecHash": "OEzVDbm3zpWGtD0IHKWYGKWUQEjeRR/npCPmnSETYMex0POUeuV8wIHjyg8e+0Q3PrEc4Oedxxn/jAcZtXiaAQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\TestProjects-SoftUni\\MicroServicesSoftUni\\ECommerceServer\\ECommerce.ApiGetway\\ECommerce.ApiGetway.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\MS2015\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\3.1.2\\aspnetcore.healthchecks.rabbitmq.3.1.2.nupkg.sha512",
+    "C:\\Users\\MS2015\\.nuget\\packages\\aspnetcore.healthchecks.sqlserver\\3.1.1\\aspnetcore.healthchecks.sqlserver.3.1.1.nupkg.sha512",
+    "C:\\Users\\MS2015\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\3.1.1\\aspnetcore.healthchecks.ui.client.3.1.1.nupkg.sha512",
+    "C:\\Users\\MS2015\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\3.1.1\\aspnetcore.healthchecks.ui.core.3.1.1.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\automatonymous\\5.0.0\\automatonymous.5.0.0.nupkg.sha512",
@@ -23,7 +27,7 @@
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.data.sqlclient\\1.0.19269.1\\microsoft.data.sqlclient.1.0.19269.1.nupkg.sha512",
+    "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.data.sqlclient\\1.1.1\\microsoft.data.sqlclient.1.1.1.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.5\\microsoft.entityframeworkcore.3.1.5.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.5\\microsoft.entityframeworkcore.abstractions.3.1.5.nupkg.sha512",
     "C:\\Users\\MS2015\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.5\\microsoft.entityframeworkcore.analyzers.3.1.5.nupkg.sha512",

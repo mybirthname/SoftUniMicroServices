@@ -19,6 +19,8 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Notifications", "ECommerce.Notifications\ECommerce.Notifications.csproj", "{D38CD75B-F484-4C6D-9819-F35D3D0690A9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.WatchDog", "Ecommerce.WatchDog\ECommerce.WatchDog.csproj", "{67D946D9-B643-4593-AA9E-4D14A26277C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{D38CD75B-F484-4C6D-9819-F35D3D0690A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38CD75B-F484-4C6D-9819-F35D3D0690A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38CD75B-F484-4C6D-9819-F35D3D0690A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D946D9-B643-4593-AA9E-4D14A26277C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D946D9-B643-4593-AA9E-4D14A26277C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D946D9-B643-4593-AA9E-4D14A26277C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D946D9-B643-4593-AA9E-4D14A26277C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

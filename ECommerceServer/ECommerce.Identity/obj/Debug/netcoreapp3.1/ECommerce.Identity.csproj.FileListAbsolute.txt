@@ -102,3 +102,7 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\zh\Hangfire.Core.resources.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.0\System.Data.SqlClient.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Data.SqlClient.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\ECommerce.Identity\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll

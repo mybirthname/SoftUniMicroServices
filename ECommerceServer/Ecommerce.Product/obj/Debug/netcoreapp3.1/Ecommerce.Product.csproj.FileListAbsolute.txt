@@ -97,3 +97,7 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.genruntimeconfig.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll
