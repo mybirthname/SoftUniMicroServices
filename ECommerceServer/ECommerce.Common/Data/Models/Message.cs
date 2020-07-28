@@ -14,9 +14,10 @@ namespace ECommerce.Common.Data.Models
 
         public bool Published { get; set; }
 
-        public Message(object data)
+        public Message(object data, Guid id)
         {
             this.Data = data;
+            this.ID = id;
         }
 
         private Message()

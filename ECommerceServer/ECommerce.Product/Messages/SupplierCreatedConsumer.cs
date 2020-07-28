@@ -1,4 +1,5 @@
 ﻿using ECommerce.Common.Messages.Supplier;
+using ECommerce.Common.Services.Messages;
 using ECommerce.Product.Data.Models;
 using ECommerce.Product.Services;
 using MassTransit;
@@ -12,19 +13,24 @@ namespace ECommerce.Product.Messages
     public class SupplierCreatedConsumer : IConsumer<SupplierCreatedMessage>
     {
         private readonly ISupplierService supplier;
+        private readonly IMessageService messageService;
 
-        public SupplierCreatedConsumer(ISupplierService supplier)
+        public SupplierCreatedConsumer(ISupplierService supplier, IMessageService messageService)
         {
             this.supplier = supplier;
+            this.messageService = messageService;
         }
 
         public async Task Consume(ConsumeContext<SupplierCreatedMessage> context)
         {
             var message = context.Message;
 
+            var dbMessage = await messageService.GetByID(message.ID);
+
+
             Supplier s = new Supplier()
             {
-                ID = message.ID,
+                ID = message.SupplierID,
                 Name = message.Name,
                 Email = message.Email
             };

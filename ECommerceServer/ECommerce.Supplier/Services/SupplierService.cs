@@ -43,12 +43,12 @@ namespace ECommerce.Supplier.Services
 
             var messageData = new SupplierCreatedMessage
             {
-                ID = data.ID,
+                SupplierID = data.ID,
                 Name = data.Name,
                 Email = data.Email
             };
 
-            var m = new Message(messageData);
+            var m = new Message(messageData, messageData.ID);
             await Save(data, m);
 
             await this.bus.Publish(messageData);

@@ -6,6 +6,7 @@ import { ShopcartComponent } from './shopcart/shopcart.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { ProductComponent } from './product/product.component';
 import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
+import { ProductEditComponent } from './product-edit/product-edit.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,8 @@ const routes: Routes = [
   { path: 'shopcart', component: ShopcartComponent },
   { path: 'supplier', component: SupplierComponent },
   { path: 'product', component: ProductComponent },
+  { path: 'product-edit', component: ProductEditComponent },
+  { path: 'product-edit/:id', component: ProductEditComponent },
   { path: 'supplier-edit/:id', component:SupplierEditComponent},
   { path: 'supplier-edit', component:SupplierEditComponent}
 

@@ -18,6 +18,7 @@ namespace ECommerce.Product.Services
         public SupplierService(ProductDbContext db, IMapper mapper) :base(db)
         {
             this.mapper = mapper;
+
         }
         public async Task<SupplierOutputModel> GetByID(Guid id)
         {
@@ -27,6 +28,9 @@ namespace ECommerce.Product.Services
                       .Where(d => d.ID == id))
                   .FirstOrDefaultAsync();
         }
+        public async Task<IEnumerable<SupplierOutputModel>> GetList()
+            => await this.mapper.ProjectTo<SupplierOutputModel>(this.All()).ToListAsync();
+
 
         public async Task<SupplierOutputModel> SaveEntity(Supplier model)
         {

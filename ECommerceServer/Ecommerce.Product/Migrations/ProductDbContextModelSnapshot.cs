@@ -40,6 +40,41 @@ namespace ECommerce.Product.Migrations
                     b.ToTable("Messages");
                 });
 
+            modelBuilder.Entity("ECommerce.Product.Data.Models.ProductItemList", b =>
+                {
+                    b.Property<Guid>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("DeliveryTime")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NrIntern")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("PricePerPQ")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("SupplierEmail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SupplierName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("URL")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("ProductItemList");
+                });
+
             modelBuilder.Entity("ECommerce.Product.Data.Models.Supplier", b =>
                 {
                     b.Property<Guid>("ID")

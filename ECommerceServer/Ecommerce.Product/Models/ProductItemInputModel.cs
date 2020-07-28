@@ -21,7 +21,7 @@ namespace ECommerce.Product.Models
 
         public string Description { get; set; }
 
-        public Guid SupplierID { get; set; }
+        public string SupplierID { get; set; }
 
         public int DeliveryTime { get; set; }
 

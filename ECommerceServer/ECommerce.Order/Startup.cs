@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ECommerce.Common.Infrastructure;
+using ECommerce.Common.Services.Messages;
 using ECommerce.Ordering.Data;
 using ECommerce.Ordering.Service;
 using Microsoft.AspNetCore.Builder;
@@ -31,6 +32,7 @@ namespace ECommerce.Order
             .AddWebService<OrderingDbContext>(this.Configuration)
             .AddTransient<IOrderService, OrderService>()
             .AddTransient<IShopCartService, ShopCartService>()
+            .AddTransient<IMessageService, MessageService>()
             .AddHangFireServices(Configuration);
 
 

@@ -15,6 +15,8 @@ import { SupplierEditComponent } from './supplier-edit/supplier-edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
+import { ProductEditComponent } from './product-edit/product-edit.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,8 @@ import { ToastrModule } from 'ngx-toastr';
     ProductComponent,
     SupplierComponent,
     ShopcartComponent,
-    SupplierEditComponent
+    SupplierEditComponent,
+    ProductEditComponent
     
   ],
   imports: [

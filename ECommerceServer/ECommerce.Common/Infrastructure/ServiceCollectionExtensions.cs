@@ -4,8 +4,10 @@ using ECommerce.Common.Models;
 using ECommerce.Common.Services;
 using ECommerce.Common.Services.Identity;
 using ECommerce.Common.Services.Identity.Interfaces;
+using ECommerce.Common.Services.Messages;
 using GreenPipes;
 using Hangfire;
+using Hangfire.SqlServer;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -112,11 +114,17 @@ namespace ECommerce.Common.Infrastructure
 
         public static IServiceCollection AddHangFireServices(this IServiceCollection services, IConfiguration configuration)
         {
+            var options = new SqlServerStorageOptions
+            {
+                SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+                QueuePollInterval = TimeSpan.FromSeconds(30)
+            };
             services.AddHangfire(config => config
+            
                                 .SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
                                 .UseSimpleAssemblyNameTypeSerializer()
                                 .UseRecommendedSerializerSettings()
-                                .UseSqlServerStorage(configuration.GetConnectionString("DefaultConnection")));
+                                .UseSqlServerStorage(configuration.GetConnectionString("DefaultConnection"), options));
 
             services.AddHangfireServer();
             services.AddHostedService<MessagesHostedService>();
@@ -154,7 +162,6 @@ namespace ECommerce.Common.Infrastructure
                     }));
                 })
                 .AddMassTransitHostedService();
-
 
             return services;
         }

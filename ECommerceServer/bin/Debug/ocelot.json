@@ -21,6 +21,59 @@
       }
     },
     {
+      "DownstreamPathTemplate": "/api/v1/Supplier/getlist",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "supplier",
+          "Port": 443
+        }
+      ],
+      "Key": "SupplierGetList",
+      "Priority": 1,
+      "UpstreamPathTemplate": "/supplier/getlist",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1/product/getlist",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "product",
+          "Port": 443
+        }
+      ],
+      "Key": "ProductGetList",
+      "Priority": 1,
+      "UpstreamPathTemplate": "/product/getlist",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      },
+      "DangerousAcceptAnyServerCertificateValidator": true,
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "5s",
+        "PeriodTimespan": 6,
+        "Limit": 8
+      }
+    },
+    {
       "DownstreamPathTemplate": "/api/v1/Supplier/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -45,7 +98,7 @@
       }
     },
     {
-      "DownstreamPathTemplate": "/api/v1/Product/{everything}",
+      "DownstreamPathTemplate": "/api/v1/product/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -58,9 +111,6 @@
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "Bearer",
         "AllowedScopes": []
-      },
-      "RouteClaimsRequirement": {
-        "Role": "Administrator"
       },
       "DangerousAcceptAnyServerCertificateValidator": true,
       "RateLimitOptions": {
@@ -94,6 +144,16 @@
         "PeriodTimespan": 6,
         "Limit": 8
       }
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "ProductGetList",
+        "SupplierGetList"
+      ],
+      "UpstreamPathTemplate": "/aggregate/dashboard",
+      "Aggregator": "DashboardAggregator"
     }
   ],
   "GlobalConfiguration": {

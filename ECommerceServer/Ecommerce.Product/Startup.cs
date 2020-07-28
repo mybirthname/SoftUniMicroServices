@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Ecommerce.Product.Data;
 using Ecommerce.Product.Data.Models;
 using ECommerce.Common.Infrastructure;
+using ECommerce.Common.Services.Messages;
 using ECommerce.Product.Messages;
 using ECommerce.Product.Services;
 using MassTransit;
@@ -34,7 +35,9 @@ namespace Ecommerce.Product
             .AddWebService<ProductDbContext>(this.Configuration)
             .AddTransient<IProductItemService, ProductItemService>()
             .AddTransient<ISupplierService, SupplierService>()
-            .AddMessaging(this.Configuration, typeof(SupplierCreatedConsumer))
+            .AddTransient<IMessageService, MessageService>()
+            .AddTransient<IProductItemListService, ProductItemListService>()
+            .AddMessaging(this.Configuration, typeof(SupplierCreatedConsumer), typeof(ProductItemListCreatedConsumer))
             .AddHangFireServices(this.Configuration);
 
 

@@ -1,1 +1,34 @@
-<p>product works!</p>
+<div class="container mt-5">
+    <h1 class="text-center mb-3">Supplier</h1>
+        
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">Title</th>
+            <th scope="col">NrIntern</th>
+            <th scope="col">PricePerPQ</th>
+            <th scope="col">SupplierName</th>
+            <th scope="col">SupplierEmail</th>
+            <th scope="col">DeliveryTime</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let p of product">
+            <td scope="row">{{p.title}}</td>
+            <td>{{p.nrIntern}}</td>
+            <td>{{p.pricePerPQ}}</td>
+            <td>{{p.supplierName}}</td>
+            <td>{{p.supplierEmail}}</td>
+            <td>{{p.deliveryTime}}</td>
+            <td><button type="button"  class="btn btn-success" (click)="editProduct(p.id)">Edit product</button>    </td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="row justify-content">    
+        <div class="col-sm-6">
+            <button type="button"  class="btn btn-success" (click)="newProduct()">New product</button>    
+        </div>
+    </div>  
+  </div>

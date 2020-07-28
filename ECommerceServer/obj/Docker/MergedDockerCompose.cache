@@ -49,6 +49,27 @@ services:
     restart: on-failure
     volumes:
     - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\identity\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
+  ecommerce.notificaitons:
+    build:
+      context: C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer
+      dockerfile: ECommerce.Notifications/Dockerfile
+    container_name: notificaitons
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ApplicationSettings__Secret: S0M3 M4G1C UN1C0RNS G3N3R4T3D TH1S S3CR3T
+    hostname: notifications
+    image: ecommercenotifications
+    networks:
+      ecommerce-network: {}
+    ports:
+    - published: 3000
+      target: 80
+    - published: 3001
+      target: 443
+    restart: on-failure
+    volumes:
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\notificaitons\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
   ecommerce.ordering:
     build:
       context: C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer
@@ -118,6 +139,27 @@ services:
     restart: on-failure
     volumes:
     - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\supplier\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
+  ecommerce.watchdog:
+    build:
+      context: C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer
+      dockerfile: ECommerce.WatchDog/Dockerfile
+    container_name: watchdog
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      ApplicationSettings__Secret: S0M3 M4G1C UN1C0RNS G3N3R4T3D TH1S S3CR3T
+    hostname: watchdog
+    image: ecommercewatchdog
+    networks:
+      ecommerce-network: {}
+    ports:
+    - published: 2000
+      target: 80
+    - published: 2001
+      target: 443
+    restart: on-failure
+    volumes:
+    - C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\.aspnet\watchdog\DataProtection-Keys:/root/.aspnet/DataProtection-Keys:rw
   messages:
     container_name: rabbitmq
     environment:
@@ -125,7 +167,7 @@ services:
       RABBITMQ_DEFAULT_USER: rabbitmq
       RABBITMQ_ERLANG_COOKIE: Rand0mR4bbitMqCo0k1e
     hostname: rabbitmq
-    image: rabbitmq:latest
+    image: rabbitmq:3.8.5-management
     networks:
       ecommerce-network: {}
     ports:

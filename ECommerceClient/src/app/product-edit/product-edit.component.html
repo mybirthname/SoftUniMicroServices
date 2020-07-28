@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <h1 class="text-center mb-3">Supplier</h1>
+    <form [formGroup]="form">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" formControlName="nrIntern" placeholder="NrIntern" aria-label="NrIntern" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" formControlName="title" placeholder="Title" aria-label="Title" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" formControlName="description" placeholder="Description" aria-label="Description" aria-describedby="basic-addon1">
+                </div>                   
+                <div class="input-group mb-3">
+                    <select formControlName="supplierID">
+                        <option *ngFor="let x of suppliers" [value]="x.id" [selected]="product?.supplierID == x.id">{{x.name}}</option>
+                    </select>                
+                </div> 
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" type="number" formControlName="pricePerPQ" placeholder="PricePerPQ" aria-label="PricePerPQ" aria-describedby="basic-addon1">
+                </div> 
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" formControlName="url" placeholder="URL" aria-label="URL" aria-describedby="basic-addon1">
+                </div>       
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" type="number" formControlName="deliveryTime" placeholder="DeliveryTime" aria-label="DeliveryTime" aria-describedby="basic-addon1">
+                </div>       
+            </div>
+        </div>
+        <div class="row justify-content-center">    
+            <div class="col-sm-6">
+                <button type="button"  class="btn btn-success" (click)="save()">Save</button>    
+            </div>
+        </div>  
+    </form>
+</div>

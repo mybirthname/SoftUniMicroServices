@@ -31,7 +31,8 @@ namespace ECommerce.ApiGetway
         => services
             .AddCors()
             .AddTokenAuthentication(Configuration)
-            .AddOcelot();
+            .AddOcelot()
+            .AddSingletonDefinedAggregator<DashboardAggregator>();
 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +43,8 @@ namespace ECommerce.ApiGetway
                     .AllowAnyOrigin()
                     .AllowAnyHeader()
                     .AllowAnyMethod())
+                .UseAuthentication()
+                .UseAuthorization()
                 .UseOcelot().Wait();
         }
     }

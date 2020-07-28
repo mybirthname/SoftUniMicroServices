@@ -19,6 +19,7 @@ namespace Ecommerce.Product.Data
 
         public DbSet<ProductItem> Products { get; set; }
         public DbSet<Supplier> Suppliers { get; set; }
+        public DbSet<ProductItemList> ProductItemList { get; set; }
 
         protected override Assembly ConfigureAssembly => Assembly.GetExecutingAssembly();
     }

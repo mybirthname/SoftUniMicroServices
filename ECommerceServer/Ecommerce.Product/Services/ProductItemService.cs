@@ -1,9 +1,12 @@
 ﻿using AutoMapper;
 using Ecommerce.Product.Data;
 using Ecommerce.Product.Data.Models;
+using ECommerce.Common.Data.Models;
+using ECommerce.Common.Messages.Product;
 using ECommerce.Common.Services;
 using ECommerce.Product.Data.Models;
 using ECommerce.Product.Models;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,10 +19,12 @@ namespace ECommerce.Product.Services
     {
 
         private readonly IMapper mapper;
+        private readonly IBus bus;
 
-        public ProductItemService(ProductDbContext db, IMapper mapper) : base(db)
+        public ProductItemService(ProductDbContext db, IMapper mapper, IBus bus) : base(db)
         {
             this.mapper = mapper;
+            this.bus = bus;
         }
 
         public async Task<IEnumerable<ProductItemOutputModel>> GetList()
@@ -37,6 +42,24 @@ namespace ECommerce.Product.Services
             var data = this.mapper.Map<ProductItem>(model);
 
             await Save(data);
+
+            var messageData = new ProductItemCreatedMessage
+            {
+                ProductItemID = data.ID,
+                NrIntern = data.NrIntern,
+                Title = data.Title,
+                SupplierID = data.SupplierID,
+                DeliveryTime = data.DeliveryTime,
+                PricePerPQ = data.PricePerPQ,
+                Description = data.Description,
+                URL = data.URL
+            };
+
+            var m = new Message(messageData, messageData.ID);
+            await Save(data, m);
+
+            await this.bus.Publish(messageData);
+            await MarkMessageAsPublished(m.ID);
 
             return this.mapper.Map<ProductItemOutputModel>(data);
         }

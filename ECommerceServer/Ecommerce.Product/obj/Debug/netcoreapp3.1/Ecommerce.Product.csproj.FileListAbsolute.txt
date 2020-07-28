@@ -1,3 +1,7 @@
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.AssemblyInfoInputs.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.AssemblyInfo.cs
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.csproj.CoreCompileInputs.cache
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
@@ -7,6 +11,10 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\ECommerce.Product.runtimeconfig.dev.json
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\ECommerce.Product.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\ECommerce.Product.pdb
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
+C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\AutoMapper.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\Automatonymous.dll
@@ -85,11 +93,6 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\ECommerce.Common.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\ECommerce.Common.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.csprojAssemblyReference.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.AssemblyInfoInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.AssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.csproj.CoreCompileInputs.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.RazorTargetAssemblyInfo.cache
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.csproj.CopyComplete
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\staticwebassets\ECommerce.Product.StaticWebAssets.Manifest.cache
@@ -97,7 +100,3 @@ C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.dll
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.pdb
 C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\obj\Debug\netcoreapp3.1\ECommerce.Product.genruntimeconfig.cache
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.RabbitMQ.dll
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.SqlServer.dll
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Client.dll
-C:\Projects\TestProjects-SoftUni\MicroServicesSoftUni\ECommerceServer\Ecommerce.Product\bin\Debug\netcoreapp3.1\HealthChecks.UI.Core.dll

@@ -10,7 +10,10 @@ namespace ECommerce.Product.Services
     public interface ISupplierService
     {
         Task<SupplierOutputModel> SaveEntity(Supplier model);
+
         Task<SupplierOutputModel> GetByID(Guid id);
+        Task<IEnumerable<SupplierOutputModel>> GetList();
+
 
     }
 }
