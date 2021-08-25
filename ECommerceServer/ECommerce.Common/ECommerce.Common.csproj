@@ -14,7 +14,7 @@
     <PackageReference Include="HangFire.SqlServer" Version="1.7.11" />
     <PackageReference Include="MassTransit.AspNetCore" Version="7.0.2-develop.2877" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.2-develop.2877" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.18" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
